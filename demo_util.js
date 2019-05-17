@@ -173,7 +173,8 @@ function drawPoints(ctx, points, radius, color) {
  * Read our blog post for a description of PoseNet's offset vector outputs
  * https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5
  */
-export function drawOffsetVectors(
+//export function drawOffsetVectors(
+function drawOffsetVectors(
     heatMapValues, offsets, outputStride, scale = 1, ctx) {
   const offsetPoints =
       posenet.singlePose.getOffsetPoints(heatMapValues, outputStride, offsets);
