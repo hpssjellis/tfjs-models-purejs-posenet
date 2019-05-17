@@ -14,9 +14,13 @@
  * limitations under the License.
  * =============================================================================
  */
-import * as posenet from '@tensorflow-models/posenet';
-import * as tf from '@tensorflow/tfjs';
-import dat from 'dat.gui';
+
+
+//removed imports since using script src tags
+
+//import * as posenet from '@tensorflow-models/posenet';
+//import * as tf from '@tensorflow/tfjs';
+//import dat from 'dat.gui';
 
 // clang-format off
 import {
@@ -462,7 +466,8 @@ function setupGui(net) {
  * Kicks off the demo by loading the posenet model and estimating
  * poses on a default image
  */
-export async function bindPage() {
+//export async function bindPage() {
+async function bindPage() {
   const net = await posenet.load();
 
   setupGui(net);
