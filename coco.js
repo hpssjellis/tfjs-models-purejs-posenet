@@ -23,6 +23,7 @@
 //import dat from 'dat.gui';
 
 // clang-format off
+/*
 import {
   drawBoundingBox,
   drawKeypoints,
@@ -31,6 +32,7 @@ import {
   drawSkeleton,
   renderImageToCanvas,
 } from './demo_util';
+*/
 
 // clang-format on
 
