@@ -14,11 +14,14 @@
  * limitations under the License.
  * =============================================================================
  */
-import * as posenet from '@tensorflow-models/posenet';
-import dat from 'dat.gui';
-import Stats from 'stats.js';
 
-import {drawBoundingBox, drawKeypoints, drawSkeleton} from './demo_util';
+// using script src tags so imports can be removed
+
+// import * as posenet from '@tensorflow-models/posenet';
+// import dat from 'dat.gui';
+// import Stats from 'stats.js';
+
+// import {drawBoundingBox, drawKeypoints, drawSkeleton} from './demo_util';
 
 const videoWidth = 600;
 const videoHeight = 500;
@@ -289,7 +292,8 @@ function detectPoseInRealTime(video, net) {
  * Kicks off the demo by loading the posenet model, finding and loading
  * available camera devices, and setting off the detectPoseInRealTime function.
  */
-export async function bindPage() {
+// export async function bindPage() {
+async function bindPage() {
   // Load the PoseNet model weights with architecture 0.75
   const net = await posenet.load(0.75);
 
